@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre NetSuite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       
+        <p>Seleccione el idioma: 
+            <a href="?lang=es" class="link-resaltado">
+                Es <img src="assets/flag_es.png" alt="Español" class="flag-icon">
+            </a> 
+            /
+            <a href="?lang=pt" class="link-resaltado">
+                Pt <img src="assets/flag_pt.png" alt="Português" class="flag-icon">
+            </a>
+        </p>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <div>
+                    <h1 class="titulo">Blog de información práctica.</h1>
+                    
+                    <h6 class="frases">Módulos, Términos, Workflow, Configuración Inicial, Rutas de Funciones, FAQ's.</h6>
+                    <p class="frases">Por Palinux360 <a href="https://www.linkedin.com/in/palinux360" target="_blank" class="link-accion">LinkedIn</a> / <a href="https://github.com/Palinux360" target="_blank" class="link-accion">GitHub</a></p>
+                </div>
+                <div>
+                    <img src="assets/netsuite.png" alt="Oracle NetSuite">
+                </div>
+            </div>
+        </section>
+
+        <section class="resumen">
+            <div id="overview">
+                <div id="textoDescriptivo">
+                    <p><strong>Oracle NetSuite ERP </strong>es una solución integral de gestión empresarial en la nube que ayuda a las organizaciones a operar de manera más eficaz mediante la automatización de los procesos centrales y la visibilidad en tiempo real del rendimiento operativo y financiero.</p>
+                </div>
+                
+                <div>
+                    <img src="assets/modulos.png" alt="Rueda de Módulos" class="module-wheel">
+                </div>
+            </div>
+        </section>
+
+        <h2>Resumen de los Módulos de la Plataforma.</h2>           
+        <p><strong>NetSuite</strong> permite integrar múltiples procesos, facilita la colaboración de tareas, genera alertas automáticas y presenta datos gerenciales en tiempo real, brindando un control total del negocio en cualquier momento.</p>
+
+        <section class="descripcion-modulos">
+
+            <div id="resumen-modulos">
+                <p><strong>Gestión Financiera</strong>: Contabilidad, gestión de efectivo, presupuestos y reportes.</p>
+                <p><strong>Inventarios y Almacenes</strong>: Control y optimización de stocks, alertas.</p>
+                <p><strong>Compras</strong>: Órdenes de compra, seguimiento de proveedores y programación de pedidos.</p>
+                <p><strong>Clientes (CRM)</strong>: Gestión de contactos, servicio al cliente, marketing y análisis de ventas.</p>
+                <p><strong>Proyectos</strong>: Planificación, seguimiento, asignación de recursos, tiempos y presupuestos.</p>
+                <p><strong>Producción</strong>: Gestión de procesos, órdenes de trabajo, control de calidad.</p>
+                <p><strong>Personal (HRM)</strong>: Gestión de empleados, integración con nómina, tiempos y asistencia.</p>
+                <p><strong>E-commerce</strong>: Integración con puntos de venta y stocks, gestión de entregas.</p>
+                <p><strong>Dashboard</strong>: Visualización integral de datos, monitoreo de KPIs, informes personalizados, análisis en tiempo real y cuadros de mando interactivos.</p>
+            </div>
+            <div>
+                <img src="assets/plataforma.png" alt="Imagen de la Plataforma" class="platform-image">
+            </div>
+        </section>
+
+
+        <section class="contenido">
+       
+         <h2><strong>CONTENIDO GENERAL</strong></h2>
+         <p id="nota-titulos">(Clic en el respectivo título para desplegar la información).</p>
+
+
+                <h5 onclick="toggleContent('glosario')">
+                    1. Glosario Resumido Términos de Netsuite. <span class="toggle-btn">▼</span>
+                </h5>
+                <div id="glosario" class="content">
+                    <p><strong>Subsidiaria</strong>: Una Subsidiaria es una entidad legal dentro de la empresa que puede tener su propia estructura contable y operativa. Permite a las empresas multinacionales y con múltiples entidades gestionar todas sus operaciones dentro de una única instancia de NetSuite.</p>
+                    <p><strong>Departamento</strong>: Los Departamentos son divisiones dentro de una empresa que permiten segmentar la contabilidad y los informes financieros. Ayudan a rastrear ingresos y gastos por áreas específicas como ventas, marketing, o recursos humanos.</p>
+                    <p><strong>Ubicaciones</strong>: Las Ubicaciones en NetSuite se utilizan para definir la estructura física del inventario y el almacén. Permiten el seguimiento del inventario en diferentes almacenes, tiendas o cualquier otro tipo de instalación.</p>
+                    <p><strong>Clase</strong>: Las Clases son categorías adicionales que se pueden utilizar para segmentar transacciones y generar informes detallados. Pueden representar líneas de negocio, proyectos o cualquier otra categorización relevante.</p>
+                    <p><strong>Bin</strong>: Un Bin es una sububicación dentro de un almacén utilizada para organizar y gestionar mejor el inventario. Permite una localización precisa de los artículos dentro del almacén.</p>
+                    <p><strong>Centro de Costos</strong>: Un Centro de Costos es una unidad dentro de la empresa donde se pueden acumular costos para el análisis de la rentabilidad y el control de gastos.</p>
+                    <p><strong>Artículos</strong>: Los Artículos son productos o servicios que la empresa compra, vende o almacena. Cada artículo puede tener propiedades y configuraciones específicas para gestión de inventario, precios y costes.</p>
+                    <p><strong>Parámetros Específicos.</strong></p>
+                    <p><strong> - Registros de Transacciones</strong>: Incluyen ventas, compras, pagos y otros movimientos financieros que afectan las cuentas de la empresa.</p>
+                    <p><strong> - Registros de Entidades</strong>: Incluyen clientes, proveedores, empleados y contactos.</p>
+                    <p><strong> - Registros de Inventario</strong>: Incluyen detalles sobre la gestión de inventarios, como niveles de stock, ubicaciones y costes. </p>
+
+                </div>
+
+            <h5 onclick="toggleContent('funcionesModulos')">
+                2. Funciones Principales de los Módulos de Netsuite. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="funcionesModulos" class="content">
+                <ul>
+                    <li>
+                      <strong>Gestión Financiera.</strong>
+                      <p>El módulo de Gestión Financiera de NetSuite proporciona herramientas integrales para gestionar todas las funciones financieras de una empresa.</p>
+                      <ul>
+                        <li>Contabilidad General: Gestión de libros contables, asientos y cierre de periodos.</li>
+                        <li>Cuentas por Pagar: Control de facturas, pagos y proveedores.</li>
+                        <li>Cuentas por Cobrar: Facturación, gestión de cobros y clientes.</li>
+                        <li>Gestión de Activos: Seguimiento y depreciación de activos fijos.</li>
+                        <li>Presupuestos y Pronósticos: Creación y seguimiento de presupuestos y previsiones financieras.</li>
+                        <li>Consolidación Financiera: Consolidación de estados financieros para múltiples subsidiarias y divisiones.</li>
+                        <li>Informes Financieros: Generación de informes financieros estandarizados y personalizados.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li>
+                      <strong>Gestión de Inventarios y Almacenes.</strong>
+                      <p>Este módulo permite una gestión eficiente del inventario y de las operaciones de almacén.</p>
+                      <ul>
+                        <li>Control de Inventarios: Seguimiento en tiempo real de niveles de inventario, movimientos y ubicaciones.</li>
+                        <li>Optimización de Inventario: Herramientas para minimizar exceso y evitar desabastecimientos.</li>
+                        <li>Gestión de Almacenes (WMS): Automatización de procesos de recepción, almacenamiento, picking, packing y envío.</li>
+                        <li>Ubicaciones de Almacén: Configuración y gestión de múltiples ubicaciones y bins dentro de un almacén.</li>
+                        <li>Reordenamiento Automático: Configuración de puntos de reorden y órdenes automáticas de compra.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li>
+                      <strong>Compras.</strong>
+                      <p>El módulo de Compras facilita la gestión de todo el ciclo de compras, desde la solicitud hasta el pago.</p>
+                      <ul>
+                        <li>Solicitud de Compra: Creación y aprobación de solicitudes de compra.</li>
+                        <li>Órdenes de Compra: Generación de órdenes de compra y seguimiento de su estado.</li>
+                        <li>Recepción de Mercancías: Registro y verificación de mercancías recibidas.</li>
+                        <li>Gestión de Proveedores: Mantenimiento de información y evaluación de proveedores.</li>
+                        <li>Pagos a Proveedores: Gestión de pagos y reconciliación de facturas.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li>
+                      <strong>CRM (Customer Relationship Management)</strong>
+                      <p>El módulo de CRM gestiona todas las interacciones con los clientes para mejorar las relaciones y aumentar la satisfacción.</p>
+                      <ul>
+                        <li>Gestión de Contactos: Seguimiento y gestión de información de contactos y clientes.</li>
+                        <li>Oportunidades de Venta: Gestión de oportunidades, cotizaciones y previsión de ventas.</li>
+                        <li>Automatización de Marketing: Creación y seguimiento de campañas de marketing.</li>
+                        <li>Servicio al Cliente: Gestión de tickets de soporte, contratos de servicio y bases de conocimiento.</li>
+                        <li>Portal del Cliente: Acceso para clientes a información relevante y autoservicio.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li>
+                      <strong>HRM (Human Resource Management)</strong>
+                      <p>El módulo de HRM gestiona todos los aspectos del ciclo de vida de los empleados.</p>
+                      <ul>
+                        <li>Gestión de Nómina: Procesamiento de nóminas, deducciones y beneficios.</li>
+                        <li>Gestión de Talento: Reclutamiento, evaluación y desarrollo de empleados.</li>
+                        <li>Seguimiento de Tiempo: Registro y aprobación de horas trabajadas y ausencias.</li>
+                        <li>Gestión de Beneficios: Administración de planes de beneficios y seguros.</li>
+                        <li>Evaluación de Desempeño: Herramientas para realizar evaluaciones y planificar carreras.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li>
+                      <strong>Gestión de Proyectos en NetSuite.</strong>
+                      <p><b>Planificación de Proyectos.</b></p>
+                      <ul>
+                        <li>
+                            <u>Gestión de Recursos:</u>
+                          <ul>
+                            <li>Asignación y planificación de recursos humanos y materiales.</li>
+                            <li>Vista de disponibilidad y utilización de recursos.</li>
+                            <li>Capacidad para ajustar la carga de trabajo y evitar sobreasignaciones.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Planificación de Tareas y Hitos:</u>
+                          <ul>
+                            <li>Creación de tareas, sub-tareas y hitos del proyecto.</li>
+                            <li>Definición de dependencias entre tareas.</li>
+                            <li>Utilización de diagramas de Gantt para visualizar el cronograma del proyecto.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Presupuestación y Costos:</u>
+                          <ul>
+                            <li>Establecimiento de presupuestos para proyectos.</li>
+                            <li>Seguimiento de costos reales vs. planificados.</li>
+                            <li>Análisis de variaciones presupuestarias.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Gestión de la Línea de Tiempo del Proyecto:</u>
+                          <ul>
+                            <li>Definición de fechas de inicio y fin del proyecto.</li>
+                            <li>Seguimiento de plazos y entrega de tareas.</li>
+                            <li>Actualizaciones en tiempo real del estado del proyecto.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p><b>Seguimiento de Proyectos.</b></p>
+                      <ul>
+                        <li>
+                            <u>Paneles de Control y Reportes:</u>
+                          <ul>
+                            <li>Paneles personalizables para monitorear el progreso del proyecto.</li>
+                            <li>Reportes detallados sobre la ejecución del proyecto, rendimiento de los recursos, y estado financiero.</li>
+                            <li>Análisis de KPI (indicadores clave de rendimiento) específicos del proyecto.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Gestión de Tiempo y Gastos:</u>
+                          <ul>
+                            <li>Captura de tiempo y gastos asociados a proyectos.</li>
+                            <li>Integración con la nómina y facturación.</li>
+                            <li>Aprobaciones de tiempo y gastos desde cualquier dispositivo.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Colaboración en Proyectos:</u>
+                          <ul>
+                            <li>Plataforma centralizada para la comunicación y colaboración del equipo.</li>
+                            <li>Compartir documentos y notas del proyecto.</li>
+                            <li>Gestión de problemas y riesgos.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Facturación de Proyectos:</u>
+                          <ul>
+                            <li>Generación de facturas basadas en hitos, tiempo y materiales.</li>
+                            <li>Integración con el módulo financiero para una contabilidad precisa.</li>
+                            <li>Facturación automática y manual según las necesidades del cliente.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li>
+                      <strong>E-commerce en NetSuite.</strong>
+                      <p><b>Gestión de Tienda en Línea.</b></p>
+                      <ul>
+                        <li>
+                            <u>Creación y Diseño de Sitios Web:</u>
+                          <ul>
+                            <li>Herramientas de diseño intuitivas para crear y personalizar tiendas en línea.</li>
+                            <li>Plantillas responsivas para dispositivos móviles.</li>
+                            <li>Capacidad de personalización con HTML, CSS y JavaScript.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Gestión de Productos:</u>
+                          <ul>
+                            <li>Catálogo de productos con variantes (tallas, colores, etc.).</li>
+                            <li>Gestión de inventario en tiempo real.</li>
+                            <li>Descripciones de productos, precios y opciones de SEO.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Promociones y Descuentos:</u>
+                          <ul>
+                            <li>Creación y gestión de promociones, descuentos y cupones.</li>
+                            <li>Reglas de precios avanzadas.</li>
+                            <li>Ofertas personalizadas basadas en el comportamiento del cliente.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Procesamiento de Pedidos:</u>
+                          <ul>
+                            <li>Carrito de compras y proceso de pago optimizados.</li>
+                            <li>Integración con múltiples pasarelas de pago.</li>
+                            <li>Gestión de impuestos y envío.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p><b>Funcionalidades Avanzadas de E-commerce.</b></p>
+                      <ul>
+                        <li>
+                            <u>Experiencia de Cliente Personalizada:</u>
+                          <ul>
+                            <li>Recomendaciones de productos basadas en el comportamiento del cliente.</li>
+                            <li>Contenido dinámico y segmentación de clientes.</li>
+                            <li>Personalización de la experiencia de compra.</li>
+                          </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <u>Gestión de Clientes:</u>
+                            <ul>
+                              <li>Registro y gestión de cuentas de clientes.</li>
+                              <li>Historial de compras y preferencias del cliente.</li>
+                              <li>Integración con CRM para una vista unificada del cliente.</li>
+                            </ul>
+                          </li>
+                          <br>
+                        <li>
+                            <u>Marketing y SEO:</u>
+                            <ul>
+                              <li>Herramientas integradas para la optimización de motores de búsqueda (SEO).</li>
+                              <li>Capacidad para gestionar campañas de marketing por correo electrónico.</li>
+                              <li>Integración con redes sociales.</li>
+                            </ul>
+                          </li>
+                          <br>
+                        <li>
+                            <u>Analíticas y Reportes:</u>
+                            <ul>
+                              <li>Reportes detallados sobre ventas, comportamiento del cliente y rendimiento del sitio web.</li>
+                              <li>Análisis en tiempo real para tomar decisiones informadas.</li>
+                              <li>Integración con herramientas de análisis de terceros como Google Analytics.</li>
+                            </ul>
+                          </li>
+                          <br>
+                          <li>
+                            <u>Internacionalización:</u>
+                              <ul>
+                                <li>Soporte para múltiples idiomas y monedas.</li>
+                                <li>Gestión de impuestos internacionales y opciones de envío.</li>
+                                <li>Adaptación a diferentes normativas y regulaciones locales.</li>
+                              </ul>
+                            </li>      
+            </div>
+
+            <h5 onclick="toggleContent('rutas')">
+                3. Ruta de las Principales Funciones en la Plataforma. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="rutas" class="content">
+                <p><strong>Crear un Cliente Nuevo:</strong> Listas -> Relaciones -> Clientes -> Nuevo</p>
+                <p><strong>Ver Lista de Clientes:</strong> Listas -> Relaciones -> Clientes -> Ver Todos</p>
+                <p><strong>Crear un Proveedor Nuevo:</strong> Listas -> Relaciones -> Proveedores -> Nuevo</p>
+                <p><strong>Ver Lista de Proveedores:</strong> Listas -> Relaciones -> Proveedores -> Ver Todos</p>
+                <p><strong>Crear una Factura de Venta:</strong> Transacciones -> Ventas -> Facturas -> Nuevo</p>
+                <p><strong>Ver Facturas de Venta:</strong> Transacciones -> Ventas -> Facturas -> Ver Todas</p>
+                <p><strong>Crear una Orden de Venta:</strong> Transacciones -> Ventas -> Órdenes de Venta -> Nuevo</p>
+                <p><strong>Ver Órdenes de Venta:</strong> Transacciones -> Ventas -> Órdenes de Venta -> Ver Todas</p>
+                <p><strong>Crear una Orden de Compra:</strong> Transacciones -> Compras -> Órdenes de Compra -> Nuevo</p>
+                <p><strong>Ver Órdenes de Compra:</strong> Transacciones -> Compras -> Órdenes de Compra -> Ver Todas</p>
+                <p><strong>Crear una Factura de Compra:</strong> Transacciones -> Compras -> Facturas -> Nuevo</p>
+                <p><strong>Ver Facturas de Compra:</strong> Transacciones -> Compras -> Facturas -> Ver Todas</p>
+                <p><strong>Registrar un Pago de Cliente:</strong> Transacciones -> Clientes -> Registrar Pagos -> Nuevo</p>
+                <p><strong>Registrar un Pago a Proveedor:</strong> Transacciones -> Proveedores -> Pagar Facturas -> Nuevo</p>
+                <p><strong>Crear una Cotización de Venta:</strong> Transacciones -> Ventas -> Cotizaciones -> Nuevo</p>
+                <p><strong>Ver Cotizaciones de Venta:</strong> Transacciones -> Ventas -> Cotizaciones -> Ver Todas</p>
+                <p><strong>Crear un Artículo de Inventario Nuevo:</strong> Listas -> Artículos -> Inventario -> Nuevo</p>
+                <p><strong>Ver Lista de Artículos de Inventario:</strong> Listas -> Artículos -> Inventario -> Ver Todos</p>
+                <p><strong>Registrar una Transferencia de Inventario:</strong> Transacciones -> Inventario -> Transferencias de Inventario -> Nuevo</p>
+                <p><strong>Ver Transferencias de Inventario:</strong> Transacciones -> Inventario -> Transferencias de Inventario -> Ver Todas</p>
+                <p><strong>Registrar un Ajuste de Inventario:</strong> Transacciones -> Inventario -> Ajustes de Inventario -> Nuevo</p>
+                <p><strong>Ver Ajustes de Inventario:</strong> Transacciones -> Inventario -> Ajustes de Inventario -> Ver Todos</p>
+                <p><strong>Crear un Empleado Nuevo:</strong> Listas -> Empleados -> Empleados -> Nuevo</p>
+                <p><strong>Ver Lista de Empleados:</strong> Listas -> Empleados -> Empleados -> Ver Todos</p>
+                <p><strong>Registrar Tiempo de Trabajo:</strong> Transacciones -> Empleados -> Tiempos de Trabajo -> Nuevo</p>
+                <p><strong>Ver Tiempos de Trabajo:</strong> Transacciones -> Empleados -> Tiempos de Trabajo -> Ver Todos</p>
+                <p><strong>Crear un Proyecto Nuevo:</strong> Listas -> Proyectos -> Proyectos -> Nuevo</p>
+                <p><strong>Ver Lista de Proyectos:</strong> Listas -> Proyectos -> Proyectos -> Ver Todos</p>
+                <p><strong>Crear una Tarea de Proyecto:</strong> Listas -> Proyectos -> Tareas de Proyecto -> Nuevo</p>
+                <p><strong>Ver Tareas de Proyecto:</strong> Listas -> Proyectos -> Tareas de Proyecto -> Ver Todas</p>
+                <p><strong>Crear un Caso de Soporte:</strong> Listas -> Soporte -> Casos -> Nuevo</p>
+                <p><strong>Ver Casos de Soporte:</strong> Listas -> Soporte -> Casos -> Ver Todos</p>
+                <p><strong>Crear un Evento del Calendario:</strong> Actividades -> Eventos -> Nuevo</p>
+                <p><strong>Ver Calendario de Eventos:</strong> Actividades -> Eventos -> Ver Todos</p>
+                <p><strong>Crear una Nota de Registro:</strong> Actividades -> Notas -> Nueva</p>
+                <p><strong>Ver Notas de Registro:</strong> Actividades -> Notas -> Ver Todas</p>
+                <p><strong>Crear una Tarea Nueva:</strong> Actividades -> Tareas -> Nueva</p>
+                <p><strong>Ver Tareas:</strong> Actividades -> Tareas -> Ver Todas</p>
+                <p><strong>Registrar una Entrada de Diario:</strong> Transacciones -> Contabilidad -> Entradas de Diario -> Nueva</p>
+                <p><strong>Ver Entradas de Diario:</strong> Transacciones -> Contabilidad -> Entradas de Diario -> Ver Todas</p>
+                <p><strong>Crear un Nuevo Informe:</strong> Informes -> Informes Personalizados -> Nuevo</p>
+                <p><strong>Ver Informes:</strong> Informes -> Ver Informes</p>
+                <p><strong>Personalizar un Dashboard:</strong> Inicio -> Configurar -> Personalizar Dashboard</p>
+                <p><strong>Ver Reporte de Ventas:</strong> Informes -> Ventas -> Resumen de Ventas</p>
+                <p><strong>Ver Reporte de Compras:</strong> Informes -> Compras -> Resumen de Compras</p>
+                <p><strong>Ver Reporte de Inventario:</strong> Informes -> Inventario -> Resumen de Inventario</p>
+                <p><strong>Ver Balance General:</strong> Informes -> Contabilidad -> Balance General</p>
+                <p><strong>Ver Estado de Resultados:</strong> Informes -> Contabilidad -> Estado de Resultados</p>
+                <p><strong>Crear un Workflow:</strong> Personalización -> Workflows -> Nuevo</p>
+                <p><strong>Ver Workflows:</strong> Personalización -> Workflows -> Ver Todos</p>
+            </div>
+
+            <h5 onclick="toggleContent('tareas')">
+                4. Conceptos y tareas de NetSuite. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="tareas" class="content">
+              <p><strong>¿Qué es WMS?</strong><br>
+                <u>Warehouse Management System (WMS).</u> en NetSuite es un sistema de gestión de almacenes que optimiza y automatiza las operaciones de almacenamiento y distribución. WMS proporciona herramientas para gestionar el inventario, realizar seguimientos de mercancías y optimizar los procesos de almacenamiento y distribución.</p>
+                
+                <p><strong>Ejecución de Tareas en WMS.</strong></p>
+                
+                <p><u>Ejecución de tarea de Picking desde WMS.</u><br>
+                Picking es el proceso de seleccionar y recolectar productos del inventario para cumplir con una orden de pedido.<br>
+                Pasos para ejecutar Picking:<br>
+                1. Acceso a la tarea: Navega a Almacén -> Picking -> Crear Picking.<br>
+                2. Seleccionar la Orden de Pedido: Elige la orden que requiere picking.<br>
+                3. Generar la Lista de Picking: El sistema generará una lista de los artículos a recolectar.<br>
+                4. Recolección de Artículos: Utiliza un dispositivo móvil o una lista impresa para recolectar los artículos del almacén.<br>
+                5. Confirmación de Picking: Confirma los artículos recolectados en el sistema.</p>
+                
+                <p><u>Ejecución de Tarea de Packing.</u><br>
+                Packing es el proceso de empacar los artículos recolectados para enviarlos al cliente.<br>
+                Pasos para ejecutar Packing:<br>
+                1. Acceso a la tarea: Navega a Almacén -> Packing -> Crear Packing.<br>
+                2. Seleccionar los Artículos: Elige los artículos que se han recolectado para la orden.<br>
+                3. Empacar los Artículos: Empaca los artículos en cajas o contenedores.<br>
+                4. Confirmación de Packing: Registra los detalles del empaquetado en el sistema, incluyendo el peso y las dimensiones.</p>
+                
+                <p><u>Embarque de pedidos a transportadores desde WMS.</u><br>
+                Embarque es el proceso de preparar y enviar los pedidos a los transportadores para la entrega al cliente.<br>
+                Pasos para ejecutar Embarque:<br>
+                1. Acceso a la tarea: Navega a Almacén -> Envío -> Crear Envío.<br>
+                2. Seleccionar la Orden de Envío: Elige la orden que está lista para ser enviada.<br>
+                3. Asignar Transportador: Selecciona el transportador que realizará la entrega.<br>
+                4. Generar Etiqueta de Envío: Imprime la etiqueta de envío con la información del transportador.<br>
+                5. Confirmar Envío: Actualiza el sistema con los detalles del envío y marca la orden como enviada.</p>
+                
+                <p><u>Recepción de Orden de Compra con WMS.</u><br>
+                Recepción es el proceso de recibir y registrar los artículos de una orden de compra que llegan al almacén.<br>
+                Pasos para ejecutar Recepción:<br>
+                1. Acceso a la tarea: Navega a Almacén -> Recepción -> Crear Recepción.<br>
+                2. Seleccionar la Orden de Compra: Elige la orden de compra que se está recibiendo.<br>
+                3. Verificar los Artículos: Verifica los artículos recibidos contra la orden de compra.<br>
+                4. Registrar Recepción: Registra los artículos recibidos en el sistema, incluyendo cantidades y condiciones.<br>
+                5. Almacenar Artículos: Mueve los artículos recibidos a las ubicaciones de almacenamiento designadas.</p>
+                
+                <p><u>Almacenamiento de Artículos | Putaway.</u><br>
+                Putaway es el proceso de mover los artículos recibidos a las ubicaciones de almacenamiento adecuadas en el almacén.<br>
+                Pasos para ejecutar Putaway:<br>
+                1. Acceso a la tarea: Navega a Almacén -> Putaway -> Crear Putaway.<br>
+                2. Seleccionar los Artículos: Elige los artículos que necesitan ser almacenados.<br>
+                3. Asignar Ubicaciones: Asigna ubicaciones de almacenamiento específicas para los artículos.<br>
+                4. Mover Artículos: Mueve físicamente los artículos a las ubicaciones asignadas.<br>
+                5. Confirmar Putaway: Actualiza el sistema con las ubicaciones de almacenamiento de los artículos.</p>
+                
+                <p><u>Transferencia entre Bin WMS.</u><br>
+                Transferencia entre Bin es el proceso de mover artículos de una ubicación a otra dentro del mismo almacén.<br>
+                Pasos para ejecutar Transferencia entre Bin:<br>
+                1. Acceso a la tarea: Navega a Almacén -> Transferencia de Bin -> Crear Transferencia.<br>
+                2. Seleccionar los Artículos: Elige los artículos que necesitan ser transferidos.<br>
+                3. Seleccionar las Ubicaciones: Define la ubicación de origen y la ubicación de destino.<br>
+                4. Mover Artículos: Mueve físicamente los artículos a la ubicación de destino.<br>
+                5. Confirmar Transferencia: Actualiza el sistema con los detalles de la transferencia.</p>
+                
+                <p><u>Consultar artículo desde WMS.</u><br>
+                Consultar artículo es el proceso de verificar los detalles de un artículo en el sistema WMS.<br>
+                Pasos para consultar un artículo:<br>
+                1. Acceso a la consulta: Navega a Almacén -> Consulta de Artículos.<br>
+                2. Buscar el Artículo: Ingresa el ID o nombre del artículo para buscar.<br>
+                3. Ver Detalles: Revisa los detalles del artículo, como cantidad en inventario, ubicaciones y estado.</p>
+                
+                <p><u>Creación de Bin de Depósito.</u><br>
+                Bin es una sububicación dentro de un almacén donde se almacenan los artículos.<br>
+                Pasos para crear un Bin de Depósito:<br>
+                1. Acceso a la creación: Navega a Almacén -> Bins -> Crear Bin.<br>
+                2. Ingresar Detalles: Ingresa los detalles del nuevo bin, como nombre, ubicación y tipo.<br>
+                3. Guardar: Guarda la nueva ubicación de bin en el sistema.</p>
+                
+                <p><u>Creación de Inventarios WMS.</u><br>
+                Inventarios en WMS es el proceso de realizar un conteo físico de los artículos en el almacén.<br>
+                Pasos para crear un Inventario:<br>
+                1. Acceso a la creación: Navega a Almacén -> Inventario -> Crear Inventario.<br>
+                2. Definir Alcance: Selecciona los artículos y ubicaciones a incluir en el inventario.<br>
+                3. Realizar Conteo: Realiza el conteo físico de los artículos.<br>
+                4. Registrar Resultados: Ingresa los resultados del conteo en el sistema.<br>
+                5. Ajustar Inventario: Ajusta el inventario en el sistema según los resultados del conteo.</p>
+                
+                <p><strong>Otras Tareas y Personalizaciones en NetSuite.</strong></p>
+                
+                <p><u>Creación de Importaciones de Datos CSV.</u><br>
+                Importación de Datos CSV es el proceso de cargar datos en NetSuite desde un archivo CSV.<br>
+                Pasos para crear una Importación de Datos CSV:<br>
+                1. Acceso a la importación: Navega a Setup -> Importar/Exportar -> Importar CSV.<br>
+                2. Seleccionar Tipo de Registro: Elige el tipo de registro a importar (clientes, transacciones, etc.).<br>
+                3. Subir Archivo CSV: Carga el archivo CSV.<br>
+                4. Mapear Campos: Mapea los campos del archivo CSV a los campos de NetSuite.<br>
+                5. Ejecutar Importación: Inicia el proceso de importación y revisa los resultados.</p>
+                
+                <p><u>Personalización de centro de ficha o menú en NetSuite.</u><br>
+                Personalización de Centro de Ficha permite modificar la disposición y el contenido de las fichas y menús en la interfaz de NetSuite.<br>
+                Pasos para personalizar:<br>
+                1. Acceso a la personalización: Navega a Personalización -> Centros y Tableros -> Centros.<br>
+                2. Seleccionar Centro: Elige el centro a personalizar.<br>
+                3. Modificar Fichas y Menús: Ajusta las fichas y menús según las necesidades del usuario.<br>
+                4. Guardar Cambios: Guarda y aplica los cambios.</p>
+                
+                <p><u>Personalización de Portlet.</u><br>
+                Portlet es un componente de la interfaz de usuario que muestra información específica, como informes, gráficos o listas.<br>
+                Pasos para personalizar un Portlet:<br>
+                1. Acceso a la personalización: Navega a Personalización -> Portlets.<br>
+                2. Seleccionar Tipo de Portlet: Elige el tipo de portlet (HTML, SuiteScript, etc.).<br>
+                3. Configurar Contenido: Personaliza el contenido del portlet.<br>
+                4. Guardar y Publicar: Guarda y publica el portlet en el tablero.</p>
+                
+                <p><u>Creación de campos personalizados en formularios.</u><br>
+                Campos personalizados permiten agregar campos adicionales a los formularios de NetSuite.<br>
+                Pasos para crear campos personalizados:<br>
+                1. Acceso a la creación: Navega a Personalización -> Registros y Campos -> Campos Personalizados.<br>
+                2. Seleccionar Tipo de Campo: Elige el tipo de campo a crear (texto, fecha, lista, etc.).<br>
+                3. Configurar Campo: Ingresa los detalles y configuraciones del campo.<br>
+                4. Guardar y Aplicar: Guarda y aplica el campo personalizado a los formularios deseados.</p>
+                
+                <p><u>Personalización de documentos PDF.</u><br>
+                Personalización de Documentos PDF permite modificar el diseño y contenido de documentos PDF generados por NetSuite.<br>
+                Pasos para personalizar documentos PDF:<br>
+                1. Acceso a la personalización: Navega a Personalización -> Formularios -> Formularios de Transacciones.<br>
+                2. Seleccionar Formulario: Elige el formulario PDF a personalizar.<br>
+                3. Modificar Diseño: Usa el editor para ajustar el diseño y contenido.<br>
+                4. Guardar Cambios: Guarda y aplica los cambios.</p>
+                
+                
+
+            </div>
+
+            <h5 onclick="toggleContent('workflow')">
+                5. Flujos de Trabajo (Workflow) en NetSuite. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="workflow" class="content">
+              <p><strong>Workflow NetSuite</strong> es una herramienta visual que permite a los usuarios crear y automatizar procesos de negocio sin necesidad de programar en SuiteScript. Los workflows en NetSuite son usados para:</p>
+
+              <ul>
+                <li>Automatizar Procesos de Negocio: Como aprobaciones, notificaciones y tareas.</li>
+                <li>Gestionar Estados de Registros: Cambiar el estado de un registro en función de condiciones específicas.</li>
+                <li>Validaciones y Condiciones: Realizar validaciones antes de permitir que un registro se guarde o se modifique.</li>
+                <li>Acciones Condicionales: Ejecutar acciones basadas en condiciones específicas, como enviar correos electrónicos, crear tareas o actualizar campos.</li>
+              </ul>
+              
+              <p><strong>Componentes Principales de un Workflow.</strong></p>
+              
+              <ul>
+                <li><u>Estados</u>: Representan diferentes puntos en el proceso de negocio.</li>
+                <li><u>Transiciones</u>: Definen el paso de un estado a otro basado en condiciones específicas.</li>
+                <li><u>Acciones</u>: Tareas que se ejecutan cuando un registro entra o sale de un estado, como enviar correos electrónicos, asignar tareas, actualizar campos, etc.</li>
+                <li><u>Condiciones</u>: Reglas que determinan cuándo se deben realizar transiciones o ejecutar acciones.</li>
+              </ul>
+              
+              <p><strong>Ejemplo de Uso de un Workflow.</strong></p>
+              
+              <p><u>Proceso de Aprobación de Órdenes de Compra.</u>:<br>
+              1. Estado Inicial: Orden de compra creada.<br>
+              2. Transición: Si el monto de la orden de compra es mayor a $10,000, transita al estado "Pendiente de Aprobación".<br>
+              3. Estado Pendiente de Aprobación: Envía una notificación al gerente para revisión.<br>
+              4. Acción de Aprobación: Si el gerente aprueba, transita al estado "Aprobado" y envía una notificación al equipo de compras.<br>
+              5. Acción de Rechazo: Si el gerente rechaza, transita al estado "Rechazado" y notifica al creador de la orden.</p>
+              
+              <p><strong>Ventajas de Usar Workflows.</strong></p>
+              
+              <ul>
+                <li>No se Requiere Programación: Permite a los administradores de NetSuite crear y gestionar procesos de negocio sin necesidad de escribir código.</li>
+                <li>Automatización: Reduce la carga de trabajo manual y minimiza errores.</li>
+                <li>Flexibilidad: Fácil de ajustar y modificar según los cambios en los procesos de negocio.</li>
+                <li>Transparencia: Proporciona una visión clara del estado y progreso de los procesos de negocio.</li>
+              </ul>
+              
+              <p><strong>Pasos para crear un Workflow.</strong><br>
+              1. Acceso a la creación: Navega a Personalización -> Flujos de Trabajo -> Crear Flujo de Trabajo.<br>
+              2. Definir Estados: Define los diferentes estados del flujo de trabajo.<br>
+              3. Configurar Transiciones: Establece las transiciones entre estados basadas en condiciones específicas.<br>
+              4. Agregar Acciones: Agrega acciones a los estados, como enviar correos electrónicos o actualizar campos.<br>
+              5. Activar Workflow: Guarda y activa el flujo de trabajo.</p>
+              
+            </div>
+
+            <h5 onclick="toggleContent('configuracion-inicial')">
+                6. Guía resumida de la configuración inicial. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="configuracion-inicial" class="content">
+              <p>1. <strong>Definir la Estructura Organizativa.</strong><br>
+                <ul>
+                  <li>Subsidiarias: Configurar las entidades legales de la empresa.</li>
+                  <li>Departamentos: Crear departamentos para segmentar la contabilidad y los informes.</li>
+                  <li>Ubicaciones: Definir ubicaciones físicas y de almacén.</li>
+                  <li>Clases: Crear clases para la categorización adicional de transacciones.</li>
+                </ul>
+              </p>
+              
+              <p>2. <strong>Configurar el Plan de Cuentas.</strong><br>
+                <li>Crear una estructura de cuentas contables que refleje las necesidades financieras de la empresa.</li>
+              </p>
+              
+              <p>3. <strong>Personalizar el Sistema.</strong><br>
+                <ul>
+                  <li>Crear campos personalizados, formularios, y roles de usuario.</li>
+                  <li>Configurar preferencias generales del sistema y preferencias específicas por usuario.</li>
+                </ul>
+              </p>
+              
+              <p>4. <strong>Configurar los Módulos de Operaciones.</strong><br>
+                <ul>
+                  <li>Inventario y Almacenes: Configurar ubicaciones de inventario, métodos de coste y reglas de reorden.</li>
+                  <li>Compras: Definir el flujo de trabajo de compras y configurar proveedores.</li>
+                  <li>Ventas y CRM: Configurar clientes, procesos de ventas y herramientas de marketing.</li>
+                </ul>
+              </p>
+              
+              <p>5. <strong>Importar Datos Iniciales.</strong><br>
+                Importar datos maestros como clientes, proveedores, inventario, y saldos iniciales de cuentas.
+              </p>
+              
+              <p>6. <strong>Configurar Informes y Dashboards.</strong><br>
+                Crear informes personalizados y dashboards para monitorear el rendimiento de la empresa.
+              </p>
+              
+            </div>
+
+            <h5 onclick="toggleContent('suiteScript')">
+                7. Información sobre programación de scripts para NetSuite con SuiteScript. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="suiteScript" class="content">
+              <p><strong>¿Qué es SuiteScript?</strong></p>
+
+              <p>SuiteScript es una plataforma de desarrollo basada en JavaScript que permite personalizar y extender la funcionalidad de NetSuite. Los desarrolladores pueden usar SuiteScript para crear scripts que automatizan procesos, validan datos, y personalizan interfaces de usuario, entre otras tareas.</p>
+              
+              <p><strong>Acceso a la Creación de Código en SuiteScript.</strong></p>
+              
+              <p>Para crear código en SuiteScript dentro de NetSuite, sigue estos pasos:</p>
+              
+              <p>1. <strong>Navegar a la Consola de Scripts.</strong><br>
+                - Ruta: Personalización -> Scripts -> Scripts.<br>
+                - Aquí puedes ver, crear, y gestionar tus scripts.</p>
+              
+              <p>2. <strong>Crear un Nuevo Script.</strong><br>
+                - Ruta: Personalización -> Scripts -> Scripts -> Nuevo.<br>
+                - Selecciona el tipo de script que deseas crear (por ejemplo, Cliente, Servidor, Programado, etc.).</p>
+              
+              <p>3. <strong>Tipos de Scripts en SuiteScript.</strong><br>
+                - Script de Cliente (Client Script): Se ejecuta en el navegador del usuario y puede usarse para personalizar la interfaz de usuario y validar datos en tiempo real.<br>
+                - Script de Servidor (Server Script): Se ejecuta en el servidor y puede usarse para automatizar procesos backend.<br>
+                - Script Programado (Scheduled Script): Se ejecuta en horarios específicos o bajo ciertas condiciones.<br>
+                - Script de Validación y Acción (Workflow Action Script): Se usa dentro de flujos de trabajo para automatizar y personalizar procesos de negocio.</p>
+              
+              <p>4. <strong>Editor de Script.</strong><br>
+                - Una vez que seleccionas el tipo de script, accederás a una interfaz donde puedes escribir y guardar tu código JavaScript.</p>
+              
+              <p>5. <strong>Carga y Gestión de Archivos.</strong><br>
+                - Si necesitas usar archivos adicionales, como bibliotecas JavaScript, puedes cargarlos en la SuiteScript File Cabinet.<br>
+                - Ruta: Documentos -> Archivos -> File Cabinet.</p>
+
+                <p><strong>Ejemplo de Creación de un Script de Cliente.</strong></p>
+
+              <p>1. <strong>Accede a Personalización.</strong><br>
+                - Ve a Personalización -> Scripts -> Scripts -> Nuevo.</p>
+
+              <p>2. <strong>Selecciona Tipo de Script.</strong><br>
+                - Elige "Cliente" y completa los campos requeridos, como Nombre y ID del script.</p>
+
+              <p>3. <strong>Escribe tu Código.</strong><br>
+                - En el editor de scripts, escribe tu código SuiteScript en JavaScript. Por ejemplo:</p>
+
+              <div class="code-box">
+              <pre><code>
+              function pageInit(context) {
+                  console.log('Página inicializada');
+              }
+              function saveRecord(context) {
+                  var currentRecord = context.currentRecord;
+                  var fieldValue = currentRecord.getValue('custfield_my_custom_field');
+                  
+                  if (!fieldValue) {
+                      alert('El campo personalizado no puede estar vacío');
+                      return false;
+                  }
+                  return true;
+              }
+              define(['N/record'], function(record) {
+                  return {
+                      pageInit: pageInit,
+                      saveRecord: saveRecord
+                  };
+              });
+              </code></pre>
+              </div>
+            </div>
+
+            <h5 onclick="toggleContent('faqs')">
+                8. FAQ’s sobre programación y desarrollo de scripts para NetSuite. <span class="toggle-btn">▼</span>
+            </h5>
+            <div id="faqs" class="content">
+              <p><strong>1. ¿Cuáles son los scripts más comunes en entornos de producción NetSuite?</strong></p>
+
+              <p>En entornos de producción NetSuite, los scripts más comunes incluyen:</p>
+              <ul>
+                <li><strong>Client Scripts:</strong> Ejecutados en el navegador del usuario, suelen usarse para validar datos en formularios y personalizar la interfaz de usuario.</li>
+                <li><strong>User Event Scripts:</strong> Se ejecutan en respuesta a eventos como crear, actualizar o eliminar registros, y se usan para realizar validaciones y cálculos adicionales antes de que los datos se guarden.</li>
+                <li><strong>Scheduled Scripts:</strong> Ejecutados a intervalos específicos para realizar tareas periódicas, como informes, actualizaciones de registros masivos o integraciones con otros sistemas.</li>
+                <li><strong>Suitelets:</strong> Scripts que permiten crear páginas web personalizadas y procesos que pueden ser ejecutados desde la interfaz de usuario o mediante URL.</li>
+                <li><strong>RESTlets:</strong> Permiten la creación de servicios web personalizados que pueden ser llamados desde aplicaciones externas para interactuar con NetSuite.</li>
+                <li><strong>Map/Reduce Scripts:</strong> Usados para procesar grandes volúmenes de datos de manera eficiente, dividiendo el trabajo en tareas paralelas.</li>
+              </ul>
+              
+              <p><strong>2. ¿Puedo llevar mis desarrollos en SuiteScript a un repositorio en GitHub para desplegar los scripts en NetSuite con control de versiones?</strong></p>
+              
+              <p>Sí, puedes llevar tus desarrollos en SuiteScript a un repositorio en GitHub para usar control de versiones y desplegar los scripts en NetSuite. Aquí hay un enfoque general:</p>
+              <ul>
+                <li><strong>Repositorio en GitHub:</strong> Mantén tus scripts en un repositorio GitHub para versionar y colaborar en el desarrollo.</li>
+                <li><strong>Herramientas de Despliegue:</strong> Utiliza herramientas como SuiteCloud Development Framework (SDF) o integraciones de CI/CD (Continuous Integration/Continuous Deployment) para automatizar el despliegue de scripts desde GitHub a NetSuite.</li>
+                <li><strong>SuiteCloud Development Framework (SDF):</strong> SDF es un conjunto de herramientas que permite a los desarrolladores gestionar el ciclo de vida de las personalizaciones de NetSuite, facilitando la gestión de versiones y el despliegue.</li>
+              </ul>
+              
+              <p><strong>3. ¿NetSuite tiene un procedimiento manual para registrar pagos de facturas por parte de clientes. Es posible automatizar ese proceso para que detecte el pago y lo registre?</strong></p>
+              
+              <p>Sí, es posible automatizar el proceso de registro de pagos de facturas en NetSuite. Puedes usar un script programado o un User Event Script para automatizar esta tarea. Aquí hay un enfoque general:</p>
+              <ul>
+                <li><strong>Integración con el Banco:</strong> Configura una integración con el banco para recibir notificaciones de pagos.</li>
+                <li><strong>Script Programado:</strong> Utiliza un script programado (Scheduled Script) que se ejecute regularmente para verificar los pagos recibidos y aplicarlos a las facturas correspondientes.</li>
+                <li><strong>API Bancaria:</strong> Si el banco ofrece una API, puedes usar una RESTlet para recibir los datos de los pagos y procesarlos en NetSuite.</li>
+                <li><strong>Map/Reduce Script:</strong> Para procesar grandes volúmenes de datos de pagos, usa un script Map/Reduce.</li>
+              </ul>
+              
+              <p><strong>4. ¿NetSuite tiene un procedimiento para Registrar Tiempo de Trabajo de los empleados. Es posible integrar este módulo con sistemas de control de acceso o control de tiempos?</strong></p>
+              
+              <p>Sí, NetSuite tiene un módulo para registrar el tiempo de trabajo de los empleados, y es posible integrarlo con sistemas de control de acceso o control de tiempos. Aquí hay un enfoque general:</p>
+              <ul>
+                <li><strong>NetSuite Time Tracking:</strong> Utiliza el módulo de seguimiento de tiempo para registrar las horas trabajadas por los empleados.</li>
+                <li><strong>Integración de Sistemas:</strong> Puedes usar integraciones con sistemas de control de acceso o control de tiempos mediante APIs o middleware.</li>
+                <li><strong>RESTlets o Suitelets:</strong> Desarrolla RESTlets o Suitelets en NetSuite que puedan recibir datos de tiempo desde el sistema de control de acceso.</li>
+                <li><strong>Automatización:</strong> Programa scripts para importar los datos de tiempo y registrarlos automáticamente en NetSuite.</li>
+              </ul>
+
+              <p><strong>5. ¿Qué es SuiteScript 2.0 y en qué se diferencia de SuiteScript 1.0?</strong></p>
+
+              <p>SuiteScript 2.0 es una versión mejorada del lenguaje de scripting de NetSuite, basada en JavaScript. Ofrece una estructura modular que facilita el desarrollo y mantenimiento del código. Las principales diferencias entre SuiteScript 1.0 y 2.0 son:</p>
+              <ul>
+                <li><strong>Modularidad:</strong> SuiteScript 2.0 utiliza módulos AMD (Asynchronous Module Definition) para organizar el código en módulos reutilizables.</li>
+                <li><strong>Sintaxis ES5/ES6:</strong> SuiteScript 2.0 permite el uso de características modernas de JavaScript como las definidas en ES5 y ES6.</li>
+                <li><strong>API Simplificada:</strong> La API de SuiteScript 2.0 es más intuitiva y coherente en comparación con la de SuiteScript 1.0.</li>
+              </ul>
+
+              <p><strong>6. ¿Cómo puedo depurar mis scripts en NetSuite?</strong></p>
+
+              <p>Para depurar tus scripts en NetSuite, puedes usar las siguientes herramientas y técnicas:</p>
+              <ul>
+                <li><strong>Logs:</strong> Utiliza la función de registro (log.debug, log.audit, log.error) para registrar información durante la ejecución del script.</li>
+                <li><strong>Debugging SuiteScript 2.0:</strong> Usa la herramienta de depuración de SuiteScript 2.0 en el IDE de NetSuite o en tu editor de código preferido con soporte para SuiteScript.</li>
+                <li><strong>SuiteScript Debugger:</strong> NetSuite ofrece un depurador integrado que te permite establecer puntos de interrupción y evaluar variables durante la ejecución del script.</li>
+              </ul>
+
+              <p><strong>7. ¿Qué son los bundles y cómo se usan en NetSuite?</strong></p>
+
+              <p>Los bundles en NetSuite son paquetes de personalizaciones y scripts que se pueden crear, instalar y gestionar. Permiten transferir configuraciones y scripts de un entorno a otro de manera eficiente. Para usar bundles:</p>
+              <ul>
+                <li><strong>Crear un Bundle:</strong> Ve a Personalización -> Paquetes -> Crear Paquete y selecciona los componentes que deseas incluir.</li>
+                <li><strong>Instalar un Bundle:</strong> Ve a Personalización -> Paquetes -> Buscar e Instalar Paquetes y busca el paquete que deseas instalar.</li>
+                <li><strong>Gestionar Bundles:</strong> Usa la página de administración de paquetes para actualizar, eliminar o revisar los detalles de los bundles instalados.</li>
+              </ul>
+
+              <p><strong>8. ¿Cómo puedo programar integraciones con sistemas externos en NetSuite?</strong></p>
+
+              <p>Para programar integraciones con sistemas externos en NetSuite, puedes usar varias herramientas y técnicas:</p>
+              <ul>
+                <li><strong>RESTlets:</strong> Crea servicios web personalizados que permitan a aplicaciones externas interactuar con NetSuite mediante RESTful APIs.</li>
+                <li><strong>SuiteTalk:</strong> Usa el servicio web SOAP de NetSuite para realizar operaciones CRUD y otras interacciones con datos de NetSuite.</li>
+                <li><strong>Integraciones de Terceros:</strong> Utiliza plataformas de integración como Dell Boomi, Celigo o MuleSoft para conectar NetSuite con otros sistemas.</li>
+                <li><strong>Script de Map/Reduce:</strong> Para manejar grandes volúmenes de datos y procesamiento masivo en integraciones, considera usar scripts de Map/Reduce.</li>
+              </ul>
+
+              <p><strong>9. ¿Cómo puedo manejar errores en SuiteScript?</strong></p>
+
+              <p>Para manejar errores en SuiteScript, es importante implementar técnicas de manejo de excepciones y registrar errores adecuadamente:</p>
+              <ul>
+                <li><strong>Try/Catch:</strong> Usa bloques try/catch para capturar y manejar excepciones durante la ejecución del script.</li>
+                <li><strong>Logging de Errores:</strong> Registra los errores usando log.error para facilitar la identificación y resolución de problemas.</li>
+                <li><strong>Validaciones:</strong> Implementa validaciones para prevenir errores comunes antes de que ocurran.</li>
+                <li><strong>Notificaciones:</strong> Configura notificaciones para alertar a los administradores o usuarios cuando ocurran errores críticos.</li>
+              </ul>
+
+              <p><strong>10. ¿Puedo usar bibliotecas JavaScript externas en mis scripts de NetSuite?</strong></p>
+
+              <p>Sí, puedes usar bibliotecas JavaScript externas en tus scripts de NetSuite. Para hacerlo:</p>
+              <ul>
+                <li><strong>Cargar Archivos:</strong> Sube las bibliotecas externas al File Cabinet de NetSuite (Documentos -> Archivos -> File Cabinet).</li>
+                <li><strong>Requerir Módulos:</strong> En SuiteScript 2.0, usa la función require() para incluir las bibliotecas externas en tu script.</li>
+                <li><strong>Referenciar Scripts:</strong> En SuiteScript 1.0, puedes usar la etiqueta <code>&lt;script&gt;</code> para incluir bibliotecas externas.</li>
+              </ul>
+
+              
+
+            </div>
+        </section>
+
+        <section class="disclaimer">
+            <br>
+            <p><b>Nota aclaratoria (Disclaimer).</b></p>
+            <p>Este blog está dedicado a proporcionar información educativa y recursos sobre la herramienta NetSuite en idioma español y portugués. Los contenidos aquí presentados tienen como objetivo ayudar a los usuarios a entender y utilizar NetSuite de manera más efectiva.</p>
+            <p>Quiero aclarar que no soy un distribuidor oficial de NetSuite, ni tengo ninguna afiliación directa con Oracle Corporation, la empresa propietaria de NetSuite. Toda la información y opiniones expresadas en este blog son de carácter personal y no representan la postura oficial de Oracle Corporation o de cualquier distribuidor oficial de NetSuite.</p>
+            <p>Se recomienda a los lectores verificar cualquier información importante a través de fuentes oficiales y consultar con un distribuidor autorizado o un representante de Oracle para obtener asesoramiento profesional y actualizado sobre NetSuite.</p>
+            <br>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <p>Diseño y contenido por <a href="https://www.linkedin.com/in/palinux360" target="_blank" class="link-resaltado">Palinux360</a> - Todos los derechos reservados 2024.</p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            const element = document.getElementById(id);
+            const btn = element.previousElementSibling.querySelector('.toggle-btn');
+            if (element.style.display === "block") {
+                element.style.display = "none";
+                btn.textContent = "▼";
+            } else {
+                element.style.display = "block";
+                btn.textContent = "▲";
+            }
+        }
+    </script>
+
+</body>
+</html>
