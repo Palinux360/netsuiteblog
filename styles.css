@@ -10,6 +10,7 @@ body {
 
 header {
     font-family: Arial, sans-serif;
+    font-size: 16px;
     color: white;
     background-color: #313c4f;
     text-align: right;
@@ -89,12 +90,10 @@ header p {
 }
 
 #nota-titulos {
-
     font-family: Arial, sans-serif;
     color: #313c4f;
     font-size: 14px;
     line-height: 1.2;
-
 }
 
 .link-accion{
@@ -186,12 +185,10 @@ p {
     padding: 10px;
     border-radius: 5px;
     font-family: monospace;
-    color: white
-    
+    color: white 
 }
 
 .disclaimer {
-
     font-family: Arial, sans-serif;
     color: #313c4f;
     font-size: 14px;
