@@ -203,3 +203,67 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+
+
+@media (max-width: 890px) {
+
+    .intro-content {
+        flex-direction: column-reverse;
+    }
+
+    .intro-content img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    #overview {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+
+    #overview img {
+        max-width: 100%;
+        height: auto; 
+    }
+    .descripcion-modulos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .descripcion-modulos  img {
+        max-width: 100%;
+        height: auto; 
+    }
+  }
+
+  
+@media (min-width: 361px) and (max-width: 690px) {
+
+    .titulo {  
+        font-size: 38px;
+        width: 90%;
+    }
+
+    .frases {
+        font-size: 16px;
+        width: 90%;
+        padding: 5px 5px 0 5px;
+        margin: 0;
+      }
+  }
+
+  @media (max-width: 360px) {
+
+    .titulo {
+        font-size: 32px;
+        width: 95%;
+    }
+    .frases {
+        font-size: 14px;
+        width: 95%;
+        padding: 5px 5px 0 5px;
+        margin: 0;
+      }
+
+
+  }
+
